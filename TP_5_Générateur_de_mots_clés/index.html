@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>TP Formulaire</title>
+  </head>
+  <body class="bg-light w-75 text-center">
+    <h1 class="font-weight-bolder">Générateur de "Mots-clés"</h1>
+    <form class="d-flex justify-content-around">
+      <div class="formulaire">
+        <div class="form-group">
+          <label for="nomproduit" class="text-primary font-weight-bolder">Nom du produit:</label>
+          <input type="text" class="form-control" id="nom" name="nom" placeholder="Exemple: Imprimante" />
+        </div>
+        <div class="form-group">
+          <label for="marque" class="text-primary font-weight-bolder">Marque:</label>
+          <input type="text" class="form-control" id="marque" name="marque" placeholder="Exemple: HP" />
+        </div>
+        <div class="form-group">
+          <label for="modele" class="text-primary font-weight-bolder">Modéle:</label>
+          <input type="text" class="form-control" id="modele" name="modele" placeholder="Exemple: 50-20" />
+        </div>
+        <div class="form-group">
+          <label for="reference" class="text-primary font-weight-bolder">Référence:</label>
+          <input type="text" class="form-control" id="reference" name="reference" placeholder="Exemple: Ref-HP-50-20" />
+        </div>
+        <div class="form-group">
+          <label for="specification" class="text-primary font-weight-bolder">Spécification:</label>
+          <input type="text" class="form-control" id="specification" name="specification" placeholder="Exemple: Noire" />
+        </div>
+        <button type="submit" class="btn btn-primary">Générer</button>
+      </div>
+      <div class="texte">
+        <h2 class="font-weight-bolder">Vos "Mots-clés":</h2>
+        <textarea class="text-center" name="motsclefs" id="texta" cols="25" rows="15"></textarea>
+        <br />
+        <input type="reset" class="btn btn-primary btn-sm" value="Réinitialiser" />
+        <button type="button" id="copier" class="btn btn-primary btn-sm">Copier</button>
+      </div>
+    </form>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
